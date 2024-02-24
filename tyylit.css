@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    margin: 10px;
+    background-color: #1a6d93;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+  }
+  li a {
+    display: block;
+    color: rgb(140, 229, 232);
+    padding: 6px 16px;
+    text-decoration: none;
+  }
+  li a.active {
+    background-color: cadetblue;
+    color: white;
+  }
+  li a:hover:not(.active) {
+    background-color:  rgb(19, 150, 198);
+    color: white;
+  }
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    background-color: cadetblue;
+}
+
+h2 {
+    font-size: 27px;
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+    margin: 10px;
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Space Grotesk', sans-serif;
+    text-indent: 20px;
+    margin-bottom: -10px;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+    color: cadetblue;
+    text-indent: 45px;
+    margin-bottom: -15px;
+}
+
+h5 {
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+    text-indent: 45px;
+    margin-bottom: -5px;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #1a6d93;
+}
+
+.keskitetty {
+  text-align: center;
+}
+
+.keskitettyvasen {
+  display:inline-block;
+  text-align:left;
+}
+
+#tervetuloa {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pääkuva {
+  display:block;
+  margin:auto; 
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.esittely {
+  max-width: 90%;
+  margin: 10px;
+  line-height: 1.5;
+  text-align: justify;
+  display: flex; /* Käytetään joustavaa laatikkomallia */
+  justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+  align-items: center; /* Keskittää sisällön pystysuunnassa */
+}
+
+.esittelykuva {
+  flex: 1;
+}
+
+.esittelyteksti {
+  flex: 2; /* Joustava leveys, vie enemmän tilaa kuin kuva-div */
+  padding-left: 5px; /* Lisää tilaa kuvan ja tekstin väliin */
+}
+
+.esittelykuva img {
+  max-width: 100%;
+  display: block; /* Estää kuvan ylivuodon tekstin päälle */
+}
+
+#cv-esittely {
+  font-weight: bold;
+  font-size: 20px;
+  margin:auto;
+  text-align: justify;
+  line-height: 1;
+  max-width: 70%;
+  padding:10px;
+
+}
+
+.cv-teksti p{
+  padding-left: 150px;
+  max-width: 80%;
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 768px) {
+  .pääkuva img{
+    width: 50%;
+    height: auto;
+  }
+
+  .esittely {
+    flex-direction: column; /* Sarakkeen sijaan elementit asetetaan pystysuuntaisesti */
+    align-items: flex-start; /* Elementit sijoitetaan sarakeen yläreunaan */
+  }
+
+  .esittelykuva {
+    order: -1; /* Kuva menee tekstisisällön edelle */
+  }
+
+  .cv-teksti p {
+    padding-left: 45px; /* Pienempi padding, kun näyttö on kapeampi */
+}
+}
+
+@media screen and (min-width: 768px) {
+  .cv-teksti p {
+      padding-left: 150px;
+  }
+
+  .cv-teksti p{
+    padding-left: 250px;
+    max-width: 73%;
+    text-align: justify;
+  }
+}
+
+
+footer{
+    background-color: cadetblue;
+    margin-top: 50px;
+}
+
+footer p{
+    color: whitesmoke;
+    text-align: center;
+}
